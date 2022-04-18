@@ -1,4 +1,4 @@
-package com.zww.leetcode;
+package com.zww.leetcode.hot;
 
 import java.util.HashMap;
 import java.util.Map;

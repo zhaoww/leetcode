@@ -1,4 +1,4 @@
-package com.zww.leetcode.struct;
+package com.zww.leetcode.common.struct;
 
 /**
  * Definition for singly-linked list.

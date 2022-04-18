@@ -1,6 +1,6 @@
-package com.zww.leetcode;
+package com.zww.leetcode.hot;
 
-import com.zww.leetcode.struct.ListNode;
+import com.zww.leetcode.common.struct.ListNode;
 
 /**
  * 2. 两数相加
