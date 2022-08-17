@@ -22,6 +22,16 @@ public class Solution0876 {
         return list.get(list.size() / 2);
     }
 
+    public ListNode middleNode2(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(6);
         ListNode listNode2 = new ListNode(5, listNode1);

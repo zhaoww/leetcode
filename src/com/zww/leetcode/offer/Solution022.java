@@ -29,17 +29,37 @@ public class Solution022 {
         ListNode listNode = new ListNode(0, head);
         int len = 0;
         while (head != null) {
-            len ++;
+            len++;
             head = head.next;
         }
 
-        for (int i = 0; i< len; i++) {
+        for (int i = 0; i < len; i++) {
             listNode = listNode.next;
-            if (i == len -k){
+            if (i == len - k) {
                 return listNode;
             }
         }
         return null;
+    }
+
+    /**
+     * 双指针 相隔k个距离
+     *
+     * @param head
+     * @param k
+     * @return
+     */
+    public ListNode getKthFromEnd3(ListNode head, int k) {
+        ListNode p1 = head;
+        ListNode p2 = head;
+        for (int i = 0; i < k; i++) {
+            p1 = p1.next;
+        }
+
+        while (p1 != null) {
+            p2 = p2.next;
+        }
+        return p2;
     }
 
     public static void main(String[] args) {
